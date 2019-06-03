@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<title>{$eyou.field.seo_title}</title>
+<meta name="description" content="{$eyou.field.seo_description}" />
+<meta name="keywords" content="{$eyou.field.seo_keywords}" />
+<link href="{eyou:global name='web_cmspath' /}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/slick.css" />
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/g.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/s.css">
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery-1.11.1.min.js"></script>
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery-ui.min.js"></script>
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/slick.js"></script>
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/scrolloverflow.min.notransition.js"></script>
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/g.js"></script>
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/freedom.css" />
+<script>(function(){var l=function(){var l1=function(){var sg=document.createElement('SCRIPT');sg.setAttribute('src','{eyou:global name='web_templets_pc' /}/skin/js/freedom.js?v1.18.12.14');(document.head||document.getElementsByTagName('head')[0]).appendChild(sg);sg.onload=function(){_g.take($(document));};};if(!window.jQuery){var sj=document.createElement('SCRIPT');sj.setAttribute('src','{eyou:global name='web_templets_pc' /}/skin/js/jquery-1.11.1.min.js');(document.head||document.getElementsByTagName('head')[0]).appendChild(sj);sj.onload=l1;}else l1();};window.addEventListener?window.addEventListener('load',l):window.attachEvent('onload',l);})();</script>
+</head>
+<body>
+{eyou:include file="header.htm" /}
+<div class="content_home">
+  {eyou:include file="top.htm" /}
+  <div class="news_details">
+    <div class="g_cw g_mt g_mb">
+      <div class="g_title_a g_mb">
+        <p class="p1">{$eyou.field.title}</p>
+        <p class="p2"><img class="" src="{eyou:global name='web_templets_pc' /}/skin/img/ne_sj.svg" width="15" style="vertical-align:middle;"> <span style="vertical-align:middle;">{$eyou.field.add_time|MyDate='Y-m-d H:i:s',###}</span></p>
+      </div>
+      <div class=" g_content">
+        {$eyou.field.content} 
+        <p><br/>
+        </p>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{eyou:include file="footer.htm" /}
+</body>
+</html>

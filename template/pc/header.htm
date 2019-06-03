@@ -1,0 +1,49 @@
+<div class="g_header clearfix">
+  <div class="bar"> <a href="#" class="menu"><img src="{eyou:global name='web_templets_pc' /}/skin/img/cd.svg" /></a>
+    <p class="logo"><a href="{eyou:global name='web_cmsurl' /}"><img src="{eyou:global name='web_attr_1' /}" /></a></p>
+  </div>
+  <div class="g_cw">
+    <div class="main">
+      <div class="top">
+        <div class="left"> <a href="{eyou:global name='web_cmsurl' /}" class="logo"><img src="{eyou:global name='web_logo' /}" /></a> </div>
+        <div class="right">
+          <p class="tp"> <img class="tp_dh" src="{eyou:global name='web_templets_pc' /}/skin/img/tp_dh.svg">全国咨询热线：<span>{eyou:global name='web_attr_2' /}</span> </p>
+          
+        </div>
+      </div>
+      <div class="bo">
+        <div class="nav_bj">
+          <div class="right">
+            <ul class="nav">
+              <li> <a href="{eyou:global name='web_cmsurl' /}" >
+                <p class="na_a {eyou:eq name='$Think.const.CONTROLLER_NAME' value='Index'}on_a{/eyou:eq} "><em class="en na_t">HOME</em></p>
+                <p class="na_b {eyou:eq name='$Think.const.CONTROLLER_NAME' value='Index'}on_a{/eyou:eq} "><b>首页</b></p>
+                <p class="na_c"><em class="en na_t on_a">HOME</em></p>
+                </a> </li>
+             {eyou:channel type="top" row="10" id="field" currentstyle="on_a"}
+              <li> <a href="{$field.typeurl}">
+                <p class="na_a {$field.currentstyle}"><em class="en na_t">{$field.englist_name}</em></p>
+                <p class="na_b {$field.currentstyle}"><b>{$field.typename}</b></p>
+                <p class="na_c"><em class="en na_t">{$field.englist_name}</em></p>
+                </a> </li>
+             {/eyou:channel} 
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="banner clearfix">
+  <div class="banner_pc">
+    <div class="frame" style="background-image:url({eyou:ad aid='1'}{$field.litpic}{/eyou:ad}); width:100%; ">
+      
+    </div>
+  </div>
+  
+</div>
+<div class="banner_m clearfix" zoom-width="1024" zoom-heigh="780">
+  <div class="frame_a" style="background-image:url({eyou:ad aid='2'}{$field.litpic}{/eyou:ad}); width:100%; display:inline-block;">
+    
+  </div>
+</div>

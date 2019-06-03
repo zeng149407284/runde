@@ -1,0 +1,30 @@
+<div class="bottom  g_mt">
+  <div class="g_cw">
+    <div class="left">
+      <ul class="list">
+      {eyou:channel type="top" row='4'}
+        <li>
+          <p><span>{$field.typename}</span></p>
+          {eyou:channel name="$field.children" type="son" row='4' id='field2'}
+          <p><a href="{$field2.typeurl}">{$field2.typename}</a></p>
+          {/eyou:channel}
+        </li>
+      {/eyou:channel}    
+      </ul>
+    </div>
+    <div class="right"> <img class="bo_wx" src="{eyou:global name='web_attr_4' /}">
+      <div class="hm">
+        <p>全国热线：<span>{eyou:global name='web_attr_2' /}</span></p>
+        <p>联系地址：{eyou:global name='web_attr_5' /}</p>
+      </div>
+    </div>
+    
+  </div>
+  <div class="un">
+      <p>{eyou:global name='web_copyright' /} | {eyou:global name='web_recordnum' /}  </p>
+  </div>
+</div>
+   {eyou:global name='web_thirdcode_pc' /}
+  <!-- 应用插件标签 start -->
+  {eyou:weapp type='default' /}
+  <!-- 应用插件标签 end -->

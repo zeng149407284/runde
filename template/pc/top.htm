@@ -1,0 +1,15 @@
+<div class="top">
+    <div class="g_cw">
+      <div class="g_title">
+        <p class="p1">{$eyou.field.typeid|gettoptype=###,'typename'}</p>
+        <p class="p2">{$eyou.field.typeid|gettoptype=###,'englist_name'}</p>
+      </div>
+      <div class="lt">
+        <ul class="list">
+        {eyou:channel type='first' id='field' currentstyle='en'}
+          <li><a class="{$field.currentstyle}" href="{$field.typeurl}">{$field.typename}</a></li>
+        {/eyou:channel}   
+        </ul>
+      </div>
+    </div>
+  </div>

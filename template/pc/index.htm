@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<title>{eyou:global name='web_title' /}</title>
+<meta name="description" content="{eyou:global name='web_description' /}" />
+<meta name="keywords" content="{eyou:global name='web_keywords' /}" />
+<link href="{eyou:global name='web_cmspath' /}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/slick.css" />
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/g.css">
+<link rel="stylesheet" href="{eyou:global name='web_templets_pc' /}/skin/css/s.css">
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery-1.11.1.min.js"></script>
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/jquery-ui.min.js"></script>
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/slick.js"></script>
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/scrolloverflow.min.notransition.js"></script>
+<script src="{eyou:global name='web_templets_pc' /}/skin/js/g.js"></script>
+<link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/freedom.css" />
+<script>(function(){var l=function(){var l1=function(){var sg=document.createElement('SCRIPT');sg.setAttribute('src','{eyou:global name='web_templets_pc' /}/skin/js/freedom.js?v1.18.12.14');(document.head||document.getElementsByTagName('head')[0]).appendChild(sg);sg.onload=function(){_g.take($(document));};};if(!window.jQuery){var sj=document.createElement('SCRIPT');sj.setAttribute('src','{eyou:global name='web_templets_pc' /}/skin/js/jquery-1.11.1.min.js');(document.head||document.getElementsByTagName('head')[0]).appendChild(sj);sj.onload=l1;}else l1();};window.addEventListener?window.addEventListener('load',l):window.attachEvent('onload',l);})();</script>
+</head>
+<style>
+/*core*/
+
+.core {
+}
+.core .co_bj {
+	padding: 18px;
+	background: #0a64be;
+	overflow: hidden;
+	display: inline-block;
+	width: 100%;
+}
+.core .co_title {
+	padding: 10px;
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	float: left;
+}
+.core .co_title p {
+	color: #fff;
+}
+.core .co_title span {
+	display: block;
+}
+.core .co_title .p1 {
+	padding-bottom: 15px;
+	font-size: 27px;
+	font-weight: bold;
+}
+.core .co_title .on_a {
+	display: none;
+}
+.core .co_title .p2 {
+	padding-bottom: 30px;
+	font-size: 18px;
+	font-weight: lighter;
+}
+.core .co_title a {
+	padding: 6px 8px;
+	border: solid #fff 1px;
+	color: #fff;
+}
+.core .co_title em {
+	padding: 0 5px;
+	font-size: 10px;
+}
+.core .co_list {
+	padding: 20px 0;
+	background: #fff;
+	display: inline-block;
+	height: 170px;
+	width: 80%;
+}
+.core .co_list .list {
+	width: 100%;
+}
+.core .co_list .list li {
+	text-align: center;
+	width: 25%;
+	border-right: solid #cfd2dc 1px;
+}
+.core .co_list .list li > a .bk {
+	margin-bottom: 10px;
+	height: 80px;
+	width: 80px;
+	line-height: 70px;
+	border: solid #0a64be 3px;
+	border-radius: 50px;
+	display: inline-block;
+}
+.core .co_list .list li > a .bk .co_tb {
+	vertical-align: middle;
+}
+.core .co_list .list li > a p {
+	font-size: 10px;
+}
+.core .co_list .list li > a span {
+	margin: 3px 0;
+	display: block;
+	font-size: 16px;
+	color: #000;
+}
+ @media (max-width: 1024px) {
+.core .co_bj {
+	padding: 18px 10px;
+}
+.core .co_title {
+	padding: 0;
+	width: 100%;
+}
+.core .co_title .p1 {
+	display: inline-block;
+}
+.core .co_title span {
+	padding-left: 10px;
+	display: inline-block;
+}
+.core .co_title .on_a {
+	display: inline-block;
+	float: right;
+}
+.core .co_title .on_b {
+	display: none;
+}
+.core .co_list {
+	width: 100%;
+}
+}
+ @media (max-width: 667px) {
+.core .co_list {
+	overflow: hidden;
+	height: auto;
+}
+.core .co_list .list li {
+	margin-bottom: 20px;
+	width: 50%;
+}
+}
+ @media (max-width: 400px) {
+.core .co_title span {
+	padding-left: 0;
+	display: block;
+}
+}
+ @media (max-width: 380px) {
+.core .co_list .list li {
+	width: 100%;
+	border-right: none;
+}
+}
+/*display*/
+
+.display {
+}
+.display .display_list {
+	margin-left: -10px;
+}
+.display .display_list .list {
+	width: 100%;
+}
+.display .display_list .list li {
+	padding-left: 10px;
+}
+.display .display_list .list .ls1 {
+	width: 27%;
+}
+.display .display_list .list .ls1 .dp_title {
+	padding: 15px 50px;
+	background: #eaeaea;
+	display: block;
+}
+.display .display_list .list .ls1 .dp_title p {
+	color: #0c2d63;
+	font-weight: lighter;
+}
+.display .display_list .list .ls1 .dp_title .p1 {
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+.display .display_list .list .ls1 .dp_title .p2 {
+	font-size: 16px;
+}
+.display .display_list .list .ls1 .dp_title .fg {
+	margin: 35px 0;
+	border-bottom: solid #7d7e81 1px;
+	width: 85px;
+}
+.display .display_list .list .ls1 .dp_title span {
+	margin-bottom: 6px;
+	display: block;
+	font-size: 12px;
+	color: #7d7e81;
+}
+.display .display_list .list .ls2 {
+	width: 36.5%;
+	text-align: center;
+}
+.display .display_list .list .ls2 .sp {
+	width: 100%;
+}
+.display .display_list .list .ls2 a {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+}
+.display .display_list .list .ls2 .mode {
+	position: absolute;
+	top: 33%;
+	left: 0;
+	right: 0;
+}
+.display .display_list .list .ls2 .mode p {
+	margin-top: 80px;
+    font-size: 18px;
+    color: #7d7e81;
+}
+ @media (max-width: 1024px) {
+.display .display_list .list .ls1 .dp_title {
+	padding: 20px 10px;
+}
+.display .display_list .list .ls1 {
+	margin-bottom: 10px;
+	width: 100%;
+}
+.display .display_list .list .ls1 .dp_title .fg {
+	margin: 15px 0;
+	display: block;
+}
+.display .display_list .list .ls1 .dp_title span {
+	display: inline-block;
+}
+.display .display_list .list .ls2 {
+	width: 50%;
+}
+}
+ @media (max-width: 667px) {
+.display .display_list .list .ls2 {
+	margin-top: 20px;
+	width: 100%;
+}
+.display .display_list .list .ls2 .mode {
+	top: 40%;
+}
+}
+ @media (max-width: 470px) {
+.display .display_list .list .ls2 .mode {
+	top: 35%;
+}
+}
+/*about*/
+
+.about {
+	padding: 45px 0;
+	background: #f7f7f7;
+	display: block;
+}
+.about .left {
+	float: left;
+	display: inline-block;
+	width: 67%;
+	overflow: hidden;
+	background: #fff;
+}
+.about .left .lt {
+	float: left;
+	width: 50%;
+	font-size: 0;
+}
+.about .left .lt .a_ct1 {
+	width: 100%;
+}
+.about .left .rt {
+	padding: 30px 30px 0 30px;
+	width: 50%;
+	display: inline-block;
+}
+.about .left .rt .ab_t1 {
+	margin-right: 20px;
+	float: left;
+}
+.about .left .rt .title {
+	padding: 10px 0;
+}
+.about .left .rt .title .p1 {
+	margin-bottom: 5px;
+	font-size: 18px;
+	color: #0a64be;
+}
+.about .left .rt .title .p2 {
+	font-size: 14px;
+	color: #a4acbf;
+}
+.about .left .rt .title .no_a {
+	display: none;
+}
+.about .left .rt .mode .p1 {
+	line-height: 30px;
+	color: #7d8287;
+	overflow: hidden;
+	height: 10.5em;
+}
+.about .left .rt a {
+	margin-top: 30px;
+	vertical-align: middle;
+	font-size: 12px;
+	color: #7d8287;
+	display: inline-block;
+}
+.about .left .rt .gd {
+	vertical-align: middle;
+	width: 30px;
+}
+.about .left .rt .mo {
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.about .right {
+	padding: 26px 26px 13px 26px;
+	width: 31%;
+	display: inline-block;
+	float: right;
+	background: #80c02e;
+}
+.about .right .ab_t1 {
+	margin-right: 20px;
+	float: left;
+}
+.about .right .title {
+	padding: 10px 0;
+}
+.about .right .title .p1 {
+	margin-bottom: 5px;
+	font-size: 18px;
+	color: #fff;
+}
+.about .right .title .p2 {
+	font-size: 14px;
+	color: #fff;
+}
+.about .right .title .no_a {
+	display: none;
+}
+.about .right .fg {
+	margin: 25px 0;
+	border: solid rgba(255,255,255,0.6) 0.5px;
+	width: 100%;
+	display: inline-block;
+}
+.about .right .a_ct2 {
+	margin: 0 auto;
+	display: block;
+}
+.about .right a {
+	margin-top: 30px;
+	vertical-align: middle;
+	font-size: 12px;
+	color: #fff;
+	display: inline-block;
+}
+.about .right .gd {
+	vertical-align: middle;
+	width: 30px;
+}
+.about .right .mo {
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.about .right .ry_list {
+	display: none;
+}
+ @media (max-width: 1024px) {
+.about .left {
+	margin-bottom: 20px;
+	width: 100%;
+}
+.about .left .rt {
+	padding: 50px 10px 0 30px;
+}
+.about .left .rt a {
+	margin-top: 50px;
+}
+.about .left .rt .title .p1 {
+	display: inline-block;
+}
+.about .left .rt .title .no_a {
+	margin-top: 0;
+	display: inline-block;
+	float: right;
+}
+.about .left .rt .no_b {
+	display: none;
+}
+.about .right {
+	padding: 30px 10px;
+	width: 100%;
+}
+.about .right .title .p1 {
+	display: inline-block;
+}
+.about .right .title .no_a {
+	margin-top: 0;
+	display: inline-block;
+	float: right;
+}
+.about .right .no_b {
+	display: none;
+}
+.about .right .a_ct2 {
+	display: none;
+}
+.about .right .ry_list {
+	display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.about .right .ry_list .list li {
+	padding-left: 10px;
+	width: 33%;
+	text-align: center;
+}
+}
+ @media (max-width: 780px) {
+.about {
+	padding: 10px 0;
+}
+.about .left .lt {
+	float: none;
+	width: 100%;
+}
+.about .left .rt {
+	padding: 50px 10px;
+	width: 100%;
+}
+}
+ @media (max-width: 667px) {
+.about .right .ry_list .list li {
+	margin-bottom: 10px;
+	width: 50%;
+}
+}
+ @media (max-width: 480px) {
+.about .right .ry_list .list li {
+	margin-bottom: 10px;
+	width: 100%;
+}
+}
+ @media (max-width: 400px) {
+.about .left .rt .title .no_a {
+	display: none;
+}
+.about .left .rt .no_b {
+	display: inline-block;
+}
+}
+/*news*/
+.news {
+}
+.news .news_bk {
+}
+.news .news_bk .left {
+	padding: 30px 30px 62px 30px;
+	float: left;
+	background: #0a64be;
+	width: 31%;
+}
+.news .news_bk .left .title {
+}
+.news .news_bk .left .title .p1 {
+	font-size: 18px;
+	color: #fff;
+	float: left;
+}
+.news .news_bk .left .title a {
+	font-size: 12px;
+	color: #52a3f4;
+	float: right;
+}
+.news .news_bk .left .mode {
+	margin-top: 41px;
+	display: inline-block;
+}
+.news .news_bk .left .mode .tp .p1 {
+	font-size: 16px;
+	color: #fff;
+	overflow: hidden;
+	height: 1.5em;
+}
+.news .news_bk .left .mode .tp .p2 {
+	margin-top: 15px;
+	display: inline-block;
+	font-size: 12px;
+	color: #CCC;
+}
+.news .news_bk .left .mode .fg {
+	border-style: dotted;
+}
+.news .news_bk .left .mode .bo .p1 {
+	font-size: 16px;
+	color: #fff;
+	overflow: hidden;
+	height: 1.5em;
+}
+.news .news_bk .left .mode .bo .p2 {
+	margin-top: 15px;
+	display: inline-block;
+	font-size: 12px;
+	color: #CCC;
+}
+.news .news_bk .left ul li:nth-child(2) .fg {
+	display: none;
+}
+.news .news_bk .two {
+	display: none;
+}
+.news .news_bk .right {
+	float: right;
+	width: 67%;
+	background: #f6f7f9;
+}
+.news .news_bk .right .lt {
+	float: left;
+	width: 50%;
+	font-size: 0;
+	overflow: hidden;
+}
+.news .news_bk .right .lt .pic {
+	max-height: 317px;
+}
+.news .news_bk .right .rt {
+	padding: 30px 30px 0 30px;
+	width: 50%;
+	display: inline-block;
+}
+.news .news_bk .right .rt .title .p1 {
+	font-size: 18px;
+	color: #0a64be;
+	float: left;
+}
+.news .news_bk .right .rt .title a {
+	font-size: 12px;
+	color: #b2bec9;
+	float: right;
+}
+.news .news_bk .right .rt .mode {
+	margin-top: 41px;
+	display: inline-block;
+}
+.news .news_bk .right .rt .mode p {
+	color: #bababe;
+}
+.news .news_bk .right .rt .mode .p1 {
+	font-size: 16px;
+	color: #55565e;
+}
+.news .news_bk .right .rt .mode .p2 {
+	margin-top: 15px;
+	font-size: 12px;
+	color: #bababe;
+	display: block;
+}
+.news .news_bk .right .rt .mode .p3 {
+	overflow: hidden;
+	overflow: hidden;
+	height: 3.5em;
+	line-height: 24px;
+}
+.news .news_bk .right .rt .mode .fg {
+	width: 40px;
+	border-width: 1px;
+}
+._slick3 .slick-dots li button {
+	background: #0a64be;
+	opacity: 1;
+	font-size: initial;
+	transform: scale(.7);
+}
+._slick3 .slick-dots li.slick-active button {
+	width: 10px;
+	background: transparent;
+	border: solid #0a64be 1px;
+	transform: scale(.7);
+}
+._slick3 .slick-dots {
+	right: -60px;
+}
+@media (max-width: 1024px) {
+.news .news_bk .one {
+	display: none;
+}
+.news .news_bk .two {
+	display: block;
+}
+.news .news_bk .two .right {
+	background: none;
+}
+.news .news_bk .two .right ul li {
+	background: #f6f7f9;
+}
+.news .news_bk .two ul li {
+	margin-bottom: 20px;
+	display: inline-block;
+}
+.news .news_bk .left {
+	margin-bottom: 20px;
+	padding: 30px 10px;
+	width: 100%;
+}
+.news .news_bk .left .mode {
+	display: block;
+}
+.news .news_bk .left .mode .tp span {
+	margin-top: 0;
+	float: right;
+}
+.news .news_bk .left .mode .bo span {
+	margin-top: 0;
+	float: right;
+}
+.news .news_bk .right {
+	width: 100%;
+}
+}
+ @media (max-width: 780px) {
+.news .news_bk .right .lt {
+	width: 100%;
+}
+.news .news_bk .right .rt {
+	padding: 30px 10px;
+	width: 100%;
+}
+.news .news_bk .two .right ul li .lt .pic {
+	max-height: none;
+	max-width: 100%;
+}
+}
+ @media (max-width: 480px) {
+.news .news_bk .left .mode .tp span {
+	margin-top: 20px;
+	float: none;
+	display: block;
+}
+.news .news_bk .left .mode .bo span {
+	margin-top: 20px;
+	float: none;
+	display: block;
+}
+}
+</style>
+<body>
+{eyou:include file="header.htm" /}
+{eyou:channelartlist typeid='3'}
+<div class="core clearfix">
+  <div class=" g_cw g_mt g_mb">
+    <div class="co_bj">
+      <div class="co_title">
+        <p class="p1">{eyou:field name='englist_name' /}</p>
+        <a class="on_a" href="{eyou:field name='typeurl' /}">查看更多<em> > </em></a>
+        <p class="p2">{eyou:field name='typename' /}</p>
+        <a class="on_b" href="{eyou:field name='typeurl' /}">查看更多<em> > </em></a> </div>
+      <div class="co_list">
+        <ul class="list">
+        {eyou:channel type='son' row='4'}
+          <li> <a href="{$field.typeurl}">
+            <div class="bk"> <img class="co_tb" src="{$field.litpic}"> </div>
+            <p> <span>{$field.typename}</span> {$field.englist_name} </p>
+            </a> </li>
+        {/eyou:channel} 
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{/eyou:channelartlist} 
+{eyou:channelartlist typeid='4'}
+<div class="display clearfix">
+  <div class="g_cw g_mt g_mb">
+    <div class="display_list">
+      <ul class="list">
+        <li class="ls1">
+          <div class="dp_title">
+            <p class="p1">{eyou:field name='englist_name' /}</p>
+            <p class="p2">{eyou:field name='typename' /}</p>
+            <p class="fg"></p>
+            <span>{eyou:field name='seo_description|html_msubstr=###,0,60,true' /}</span></div>
+        </li>
+        {eyou:arclist orderby='now' row='2' flag='c'}
+        <li class="ls2"> <a href="{$field.arcurl}"> <img class="sp" src="{$field.litpic}">
+          <div class="mode"> <img class="" src="{eyou:global name='web_templets_pc' /}/skin/img/tj.svg">
+            <p>{$field.title}</p>
+          </div>
+          </a> </li>
+       {/eyou:arclist} 
+      </ul>
+    </div>
+  </div>
+</div>
+{/eyou:channelartlist} 
+<div class="about g_mt g_mb clearfix">
+  <div class="g_cw">
+    <div class="">
+    {eyou:channelartlist typeid='24'}
+      <div class="left">
+        <div class="lt"> <img class="a_ct1" src="{eyou:field name='litpic' /}"> </div>
+        <div class="rt"> <img class="ab_t1" src="{eyou:global name='web_templets_pc' /}/skin/img/ab_ml.svg">
+          <div class="title">
+            <p class="p1">{eyou:field name='typename' /}</p>
+            <a class="no_a" href="{eyou:field name='typeurl' /}">
+            <p class="mo">了解更多</p>
+            <img class="gd" src="{eyou:global name='web_templets_pc' /}/skin/img/ck_gd.svg"></a>
+            <p class="p2">{eyou:field name='englist_name' /}</p>
+          </div>
+          <p class="fg"></p>
+          <div class="mode">
+            <p class="p1 "> {eyou:type addtable='single_content'}{$field.content|html_msubstr=###,0,105}...{/eyou:type}</p>
+          </div>
+          <a class="no_b" href="{eyou:field name='typeurl' /}">
+          <p class="mo">了解更多</p>
+          <img class="gd" src="{eyou:global name='web_templets_pc' /}/skin/img/ck_gd.svg"></a> </div>
+      </div>
+     {/eyou:channelartlist}  
+     {eyou:channelartlist typeid='26'}
+      <div class="right"> <img class="ab_t1 g_imgf" src="{eyou:global name='web_templets_pc' /}/skin/img/ab_ry.svg">
+        <div class="title">
+          <p class="p1">{eyou:field name='typename' /}</p>
+          <a class="no_a" href="{eyou:field name='typeurl' /}">
+          <p class="mo">了解更多</p>
+          <img class="gd" src="{eyou:global name='web_templets_pc' /}/skin/img/ck_gd_a.svg"></a>
+          <p class="p2">{eyou:field name='englist_name' /}</p>
+        </div>
+        <p class="fg"></p>
+        <img class="a_ct2 g_imgf" src="{eyou:field name='litpic' /}"> <a class="no_b" href="{eyou:field name='typeurl' /}">
+        <p class="mo">了解更多</p>
+        <img class="gd" src="{eyou:global name='web_templets_pc' /}/skin/img/ck_gd_a.svg"></a>
+        <div class="ry_list">
+          <img class=" g_imgf" src="{eyou:field name='litpic' /}">
+        </div>
+      </div>
+     {/eyou:channelartlist}  
+    </div>
+  </div>
+</div>
+<div class="news clearfix">
+  <div class="g_cw g_mt g_mb">
+    <div class="news_bk">
+    {eyou:channelartlist typeid='11'}
+      <div class="left">
+        <div class="title">
+          <p class="p1">- {eyou:field name='typename' /}</p>
+          <a href="{eyou:field name='typeurl' /}">了解更多...</a> </div>
+        <div class="mode">
+          <ul>
+          {eyou:arclist orderby='now' row='2'}
+            <li> <a href="{$field.arcurl}" target="_blank">
+              <div class="tp">
+                <p class="p1">{$field.title}</p>
+                <p class="p2">{$field.add_time|MyDate='Y-m-d',###}</p>
+              </div>
+              </a>
+              <div class="fg"></div>
+            </li>
+          {/eyou:arclist}   
+          </ul>
+        </div>
+      </div>
+      {/eyou:channelartlist}  
+      <div class="one">
+        <div class="right">
+          <ul>
+            <div class="_slick3" style="margin:0 auto; width:100%;">
+            {eyou:arclist orderby='now' row='3' typeid='9'}
+              <li>
+                <div class="lt"> <img class=" pic" src="{$field.litpic}"> </div>
+                <div class="rt">
+                  <div class="title">
+                    <p class="p1">- {$field.typename}</p>
+                    <a href="{$field.typeurl}">了解更多...</a> </div>
+                  <div class="mode"> <a href="{$field.arcurl}" target="_blank">
+                    <p class="p1">{$field.title}</p>
+                    <p class="p2">{$field.add_time|MyDate='Y-m-d',###}</p>
+                    <div class="fg"></div>
+                    <p class="p3">{$field.seo_description|html_msubstr=###,0,60,true}</p>
+                    </a> </div>
+                </div>
+              </li>
+             {/eyou:arclist}   
+            </div>
+          </ul>
+        </div>
+        <script>
+						$('._slick3').slick({ arrows: false, dots: true, slidesToShow: 1, slidesToScroll: 1, autoplay: false, autoplaySpeed: 5000, speed: 500 });
+					</script> 
+      </div>
+      <div class="two">
+        <div class="right">
+          <ul>
+            {eyou:arclist orderby='now' row='3' typeid='9'}
+              <li>
+                <div class="lt"> <img class=" pic" src="{$field.litpic}"> </div>
+                <div class="rt">
+                  <div class="title">
+                    <p class="p1">- {$field.typename}</p>
+                    <a href="{$field.typeurl}">了解更多...</a> </div>
+                  <div class="mode"> <a href="{$field.arcurl}" target="_blank">
+                    <p class="p1">{$field.title}</p>
+                    <p class="p2">{$field.add_time|MyDate='Y-m-d',###}</p>
+                    <div class="fg"></div>
+                    <p class="p3">{$field.seo_description|html_msubstr=###,0,60,true}</p>
+                    </a> </div>
+                </div>
+              </li>
+             {/eyou:arclist}   
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{eyou:include file="footer.htm" /}
+</body>
+</html>
